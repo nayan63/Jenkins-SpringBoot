@@ -23,4 +23,10 @@ public class DemoController {
         return new ResponseEntity<>(data, HttpStatus.OK);
     }
 
+    @GetMapping("/msg")
+    public String getMsg()
+    {
+        return "Welcome TO Jenkins";
+    }
+
 }
